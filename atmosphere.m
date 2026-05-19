@@ -2,7 +2,8 @@
 % and extracting useful values based on height
 
 1;
-global atm; % atm struct must be loaded elsewhere before using these
+global atm; 
+atm = load("atmosphere_data.mat");
 
 function rho = get_rho_from_y(y)
   global atm;
