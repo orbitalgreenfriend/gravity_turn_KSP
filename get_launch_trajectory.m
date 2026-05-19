@@ -28,10 +28,8 @@ if type == 2
 else
   printf("Invalid vehicle datafile specified. Exiting.\n");
 end
-% load atmosphere-related routines and data
+% load atmosphere-related routines
 atmosphere;
-global atm;
-atm = load("atmosphere_data.mat");
 % set body constants (Kerbin)
 g0   = 9.81;
 r0   = 600e3;
